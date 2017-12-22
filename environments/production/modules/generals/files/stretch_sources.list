@@ -1,0 +1,6 @@
+############################' "## This file is centrally managed, any manual changes will be OVERWRITTEN #" #################################################
+#
+deb http://ftp.fr.debian.org/debian stretch main contrib non-free
+deb http://ftp.fr.debian.org/debian stretch-updates main contrib non-free
+deb http://ftp.fr.debian.org/debian stretch-backports main contrib non-free
+deb http://security.debian.org/ stretch/updates main contrib non-free

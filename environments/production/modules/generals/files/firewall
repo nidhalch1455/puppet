@@ -1,0 +1,10 @@
+############################' "## This file is centrally managed, any manual changes will be OVERWRITTEN #" #################################################
+#!/bin/bash
+echo 1 > /proc/sys/net/ipv4/ip_forward
+# Flush des tables nat et filter
+/sbin/iptables -t nat -F
+/sbin/iptables -F
+
+/sbin/iptables -t nat -A POSTROUTING -o vmbr0 -s 10.0.1.0/24 -j MASQUERADE
+/sbin/iptables -t nat -A PREROUTING -p tcp -d 91.121.160.153 --dport 2222 -i vmbr0 -j DNAT --to-destination 10.0.1.2:22
+

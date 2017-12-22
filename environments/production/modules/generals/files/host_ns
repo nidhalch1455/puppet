@@ -1,0 +1,6 @@
+#######puppet managed ########
+
+127.0.0.1	localhost.localdomain localhost
+91.121.160.153	ns347092.ip-91-121-160.eu	ns347092
+10.0.1.254 puppet.lab
+10.0.1.2 web1.lab 
