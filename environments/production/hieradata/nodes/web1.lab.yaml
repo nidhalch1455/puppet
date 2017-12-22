@@ -1,4 +1,0 @@
----
-rootpassword: '$1$m.JX64TK$1sHQKlVvIDxg/QC7EnBnS0'
-hostsfile: 'puppet:///modules/generals/host_web1'
-bashrcfile: 'puppet:///modules/generals/bashrc_web1'
