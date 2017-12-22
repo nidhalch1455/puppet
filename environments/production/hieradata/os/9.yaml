@@ -1,0 +1,2 @@
+---
+source_list: 'puppet:///modules/generals/stretch_sources.list'

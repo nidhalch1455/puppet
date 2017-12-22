@@ -1,0 +1,15 @@
+---
+version: 5
+hierarchy:
+  - name: "Per-node data"
+    path: "nodes/%{trusted.certname}.yaml"
+  - name: "Per-codename-data"
+    path: "os/%{facts.os.distro.codename}.yaml"
+  - name: "Per-releases-data"
+    path: "os/%{facts.os.release.major}.yaml"
+  - name: "Common values"
+    path: "common.yaml"
+defaults:
+  data_hash: yaml_data
+  datadir: hieradata
+
